@@ -1,4 +1,15 @@
+// definujemy alias dla test (base) bo później rozszerzamy go o nasze fikstury 
 import { test as base, expect, Page } from '@playwright/test';
+
+// definiujemy typy dla naszych fikstur
+// w tym przypadku fikstura regonPage zawiera metody do interakcji ze stroną
+// (to customowe akcje, tzw. custom actions albo custom helpers)
+// takie jak otwieranie strony, wyszukiwanie po numerze REGON, pobieranie komunikatów o błędach i nazwy firmy
+
+// każda metoda zwraca Promise, bo operacje te są asynchroniczne
+// i wymagają oczekiwania na zakończenie działań w przeglądarce
+// dzięki temu możemy korzystać z tych metod w naszych testach w sposób asynchroniczny
+// (typowe w testach end-to-end z Playwright)
 
 type RegonFixtures = {
   regonPage: {
