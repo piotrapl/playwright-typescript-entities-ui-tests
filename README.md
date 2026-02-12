@@ -1,7 +1,7 @@
 # Testy automatyczne REGON – Playwright (TypeScript)
 
 ## Opis projektu
-Projekt jest zestawem **testów automatycznych UI (E2E)** napisanych w **Playwright + TypeScript**, przygotowanym jako część **portfolio QA Automation**.
+Projekt to zestaw **testów automatycznych UI** napisanych w **Playwright + TypeScript**
 
 Testy weryfikują funkcjonalność wyszukiwania firm po numerze **REGON** na oficjalnej stronie rządowej:
 https://wyszukiwarkaregon.stat.gov.pl
