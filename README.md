@@ -41,9 +41,8 @@ https://wyszukiwarkaregon.stat.gov.pl
 ## Zastosowane dobre praktyki automatyzacji
 -  Własne **fixtures Playwright**
 -  Testy data-driven
--  Odporne selektory (ARIA, regex)
 -  Asercje odporne na zmiany treści UI
--  Zrzuty ekranu dla **każdego testu** (PASS i FAIL)
+-  Zrzuty ekranu dla **każdego testu** niezależnie od jego wyniku (PASS lub FAIL)
 -  Screenshoty dołączone do raportu HTML
 -  Czytelna i łatwa w utrzymaniu struktura testów
 
