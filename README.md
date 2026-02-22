@@ -64,10 +64,8 @@ npx playwright show-report
 
 ## Co można dodać do tego projektu, w jaki sposób go rozszerzyć ?
 
-- **Pipeline CI/CD** z GitHub Actions (równoległe uruchamianie testów, artefakty)
 - **Analizę wyników testów** i dashboardy
 - **Testy wieloprzeglądarkowe** (Chromium, Firefox, WebKit)
 - **Testy w widokach mobilnych**
 - Zewnętrzne źródła danych testowych (JSON / CSV)
 - Podejście hybrydowe: testy UI + API
-- Rozszerzone raportowanie (metadane, środowisko, konfiguracja)
