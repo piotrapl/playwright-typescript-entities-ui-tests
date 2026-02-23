@@ -39,10 +39,16 @@ export default defineConfig({
 ],
   /* Ustawienia współdzielone między wszystkimi projektami. 
      Zobacz: https://playwright.dev/docs/api/class-testoptions. */
+// Fraza use zawiera ustawienia, które będą stosowane do wszystkich testów,
+// - takie jak screenshot, trace, video, headless, viewport itp.
+// Te ustawienia to m.in:
+// - screenshot: 'on' - zapisuje zrzut ekranu dla każdego testu, niezależnie od jego wyniku (pass/fail).
+// - trace: 'retain-on-failure' - zachowuje śledzenie (trace) tylko dla testów, które zakończyły się niepowodzeniem.
+// - video: 'retain-on-failure' - zachowuje nagranie wideo tylko dla testów, które zakończyły się niepowodzeniem.
+// - headless: true - uruchamia przeglądarkę w trybie bezgłowym (bez interfejsu użytkownika).
+// - viewport: { width: 1280, height: 720 } - ustawia rozmiar okna przeglądarki.
   use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-
     screenshot: 'on',   // zapisuje screenshot dla każdego testu, niezależnie od jego wyniku (pass/fail)
     trace: 'retain-on-failure', 
     video: 'retain-on-failure', 
